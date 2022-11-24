@@ -1,0 +1,129 @@
+.services {
+   &__content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+
+   &__card {
+      width: calc(33% - 20px);
+      margin-top: 90px;
+
+      // reverse phone
+      @media (max-width: 767.98px) {
+         width: calc(50% - 20px);
+      }
+
+      // phone
+      @media (max-width: 575.98px) {
+         margin-top: 50px;
+         width: 100%;
+      }
+
+      &:hover .services__icon,
+      &:hover .services__subtitle,
+      &:hover .services__text {
+         transform: translateY(-10px);
+      }
+
+      &:hover .services__button {
+         width: 100px;
+         transition-delay: 0s;
+      }
+
+      &:hover .services__button {
+         &::after {
+            transform: translateX(0);
+            transition-delay: 0.1s;
+         }
+      }
+   }
+
+   &__icon {
+      display: block;
+      font-size: 54px;
+      line-height: 1;
+      transition: transform 0.3s;
+
+      // phone
+      @media (max-width: 575.98px) {
+         text-align: center;
+      }
+
+      &::before {
+         color: $secondary;
+      }
+   }
+
+   &__subtitle {
+      font-size: 24px;
+      font-weight: 400;
+      margin: 26px 0;
+      text-transform: capitalize;
+      transition: transform 0.3s 0.05s;
+
+      // phone
+      @media (max-width: 575.98px) {
+         text-align: center;
+      }
+   }
+
+   &__text {
+      margin-bottom: 20px;
+
+      // phone
+      @media (max-width: 575.98px) {
+         text-align: center;
+      }
+   }
+
+   &__button {
+      display: block;
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      position: relative;
+      width: 30px;
+      background-color: $primary;
+      overflow: hidden;
+      height: 20px;
+      transition: all 0.3s ease 0.1s;
+
+      // phone
+      @media (max-width: 575.98px) {
+         margin: 0 auto;
+      }
+
+      &::before {
+         position: absolute;
+         top: 50%;
+         left: 0;
+         height: 3px;
+         background-color: $secondary;
+         width: 100%;
+         content: "";
+         transform: translateY(-50%);
+      }
+
+      &::after {
+         content: "read more";
+         text-transform: uppercase;
+         position: absolute;
+         top: 0;
+         left: 0;
+         transform: translateY(-50%);
+         background-color: $primary;
+         padding: 0 5px;
+         font-size: 11px;
+         font-weight: 700;
+         font-family: inherit;
+         white-space: nowrap;
+         transform: translateX(-100%);
+         transition: all 0.3s ease;
+         height: 100%;
+         display: flex;
+         align-items: center;
+      }
+   }
+}

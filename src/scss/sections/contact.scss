@@ -1,0 +1,138 @@
+.contact {
+   background: linear-gradient(to top, rgba($primary, 0.9), rgba($primary, 0.9)), url("../img/bg-man-wall.jpg");
+
+   &__container {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__type {
+      font-size: 38px;
+      align-self: center;
+      margin-bottom: 80px;
+   }
+
+   &__title {
+      text-align: left;
+      font-size: 30px;
+      margin-bottom: 20px;
+   }
+
+   &__row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &:nth-child(2) {
+         margin-bottom: 80px;
+      }
+
+      &:nth-child(3) {
+         // reverse phone
+         @media (max-width: 767.98px) {
+            flex-direction: column;
+         }
+      }
+   }
+
+   &__card {
+      display: flex;
+      flex-direction: column;
+      width: calc(25% - 20px);
+      margin-bottom: 30px;
+
+      // reverse phone
+      @media (max-width: 767.98px) {
+         width: calc(50% - 30px);
+      }
+
+      // phone
+      @media (max-width: 575.98px) {
+         width: 100%;
+         align-items: center;
+      }
+   }
+
+   &__card-title {
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+   }
+
+   &__card-icon {
+      display: block;
+      font-size: 42px;
+      line-height: 1;
+      transition: transform 0.3s;
+      margin-bottom: 10px;
+
+      &::before {
+         color: $secondary;
+      }
+   }
+
+   &__social {
+      width: calc(35% - 30px);
+
+      // reverse phone
+      @media (max-width: 767.98px) {
+         width: 100%;
+         margin-bottom: 30px;
+      }
+   }
+
+   &__social-list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+
+      // reverse phone
+      @media (max-width: 767.98px) {
+         flex-direction: row;
+      }
+   }
+
+   &__social-item {
+      list-style: none;
+      display: block;
+      padding: 5px 0;
+
+      // reverse phone
+      @media (max-width: 767.98px) {
+         width: calc(50% - 20px);
+      }
+
+      // phone
+      @media (max-width: 575.98px) {
+         width: 100%;
+      }
+   }
+
+   &__social-link {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+
+      &::before {
+         margin-right: 20px;
+         width: 48px;
+         height: 48px;
+         border: 1px solid rgba($grey, 0.5);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 50%;
+      }
+   }
+
+   &__form {
+      width: 65%;
+
+      // reverse phone
+      @media (max-width: 767.98px) {
+         width: 100%;
+      }
+   }
+}

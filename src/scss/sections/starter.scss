@@ -1,0 +1,59 @@
+.starter {
+   height             : 100vh;
+   background-image   : url(../img/bg-hero.jpg);
+   background-size    : cover;
+   background-position: center center;
+}
+
+.starter__container {
+   display    : flex;
+   align-items: center;
+   position   : relative;
+   height     : 100%;
+}
+
+.starter__title {
+   font-size    : 56px;
+   margin-bottom: 30px;
+}
+
+// phone
+@media (max-width: 575.98px) {
+   .starter__title {
+       font-size: 28px;
+   }
+}
+
+.starter__social {
+   margin-bottom: 30px;
+}
+
+/// phone
+@media (max-width: 575.98px) {
+   .starter__social {
+       margin-bottom: 15px;
+   }
+}
+
+.starter__button {
+   position: absolute;
+   bottom  : 30px;
+   left    : 20px;
+}
+
+// phone
+@media (max-width: 575.98px) {
+   .starter__button {
+       width : 50px;
+       height: 50px;
+   }
+}
+
+.starter__type {}
+
+// phone
+@media (max-width: 575.98px) {
+   .starter__type {
+       font-size: 28px;
+   }
+}

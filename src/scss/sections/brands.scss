@@ -1,0 +1,26 @@
+.brands {
+   &__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 0;
+
+      // tablet
+      @media (max-width: 991.98px) {
+         flex-direction: column;
+      }
+   }
+   &__img {
+      cursor: pointer;
+      max-width: calc(20% - 20px);
+      max-height: 100px;
+      object-fit: contain;
+
+      // tablet
+      @media (max-width: 991.98px) {
+         max-width: 80%;
+         margin-bottom: 20px;
+      }
+   }
+}

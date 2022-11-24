@@ -1,0 +1,23 @@
+.social {
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        list-style: none;
+    }
+
+    &__item {
+        margin-right: 25px;
+    }
+
+    &__link {
+        text-decoration: none;
+
+        &::before {
+            font-family: icomoon;
+            color: $light-grey;
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.section {
+   padding: 100px 0;
+   overflow: hidden;
+
+   // phone
+   @media (max-width: 575.98px) {
+      padding: 50px 0;
+   }
+}

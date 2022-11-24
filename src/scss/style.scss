@@ -1,0 +1,35 @@
+@import './vars';
+
+@import './fonts';
+@import './reset';
+@import './body';
+
+// blocks
+@import "blocks/container";
+@import "blocks/section";
+@import "blocks/icons";
+@import "blocks/type";
+@import "blocks/button";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/burger";
+@import "blocks/nav";
+@import "blocks/social";
+@import "blocks/title";
+@import "blocks/text";
+@import "blocks/form";
+
+// sections
+@import "sections/starter";
+@import "sections/services";
+@import "sections/about";
+@import "sections/hero";
+@import "sections/skills";
+@import "sections/portfolio";
+@import "sections/statistic";
+@import "sections/testimonials";
+@import "sections/brands";
+@import "sections/footer";
+@import "sections/contact";
+
+

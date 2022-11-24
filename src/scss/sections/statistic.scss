@@ -1,0 +1,48 @@
+.statistic {
+   background-image: url("../img/bg-man-sitting.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   padding: 120px 0;
+
+   // phone
+   @media (max-width: 575.98px) {
+      padding: 60px 0;
+   }
+
+   &__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 100px;
+   }
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 25%;
+
+      // reverse phone
+      @media (max-width: 767.98px) {
+         width: 50%;
+      }
+
+      // phone
+      @media (max-width: 575.98px) {
+         width: 100%;
+      }
+   }
+
+   &__num {
+      font-size: 56px;
+      color: $secondary;
+   }
+
+   &__text {
+      font-weight: 400;
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-align: center;
+   }
+}

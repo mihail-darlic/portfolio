@@ -1,0 +1,20 @@
+.type {
+   font-size: 56px;
+   border: 3px solid $white;
+   display: inline-block;
+   padding: 0.5em;
+   line-height: 1;
+   position: relative;
+
+   &::before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 100%;
+      left: 30px;
+      border: 7.5px solid transparent;
+      border-top: 7.5px solid $white;
+      border-left: 7.5px solid $white;
+   }
+}

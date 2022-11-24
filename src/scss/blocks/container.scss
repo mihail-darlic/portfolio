@@ -1,0 +1,35 @@
+.container {
+   width: 1140px;
+   margin: 0 auto;
+   padding: 0 20px;
+
+   // extra large
+   @media (max-width: 1420px) {
+      max-width: 1140px;
+   }
+
+   // large
+   @media (max-width: 1279.98px) {
+      max-width: 1140px;
+   }
+
+   // middle
+   @media (max-width: 1199.98px) {
+      max-width: 960px;
+   }
+
+   // tablet
+   @media (max-width: 991.98px) {
+      max-width: 720px;
+   }
+
+   // reverse phone
+   @media (max-width: 767.98px) {
+      max-width: 540px;
+   }
+
+   // phone
+   @media (max-width: 575.98px) {
+      max-width: 100%;
+   }
+}
