@@ -1,7 +1,9 @@
 const { src, dest, parallel, watch } = require('gulp');
 const del = require('del');
 const browserSync = require("browser-sync");
-const sass = require('gulp-sass');
+const dartSass = require('sass');
+const gulpSass = require('gulp-sass');
+const sass = gulpSass(dartSass);
 const twig = require('gulp-twig');
 
 const path = {
